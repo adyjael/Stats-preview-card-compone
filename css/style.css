@@ -1,0 +1,127 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: hsl(233, 47%, 7%);
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+}
+
+.container {
+    background: hsl(244, 38%, 16%);
+    display: flex;
+    border-radius: 7px;
+    width: 69%;
+    margin: 0 auto;
+    align-items: center;
+    margin-top: 100px;
+}
+.container section {
+    width: 80%;
+}
+
+.container_conteudo {
+    margin: 0 39px 0 39px;
+}
+.container_conteudo h1 {
+    font-size: 30px;
+}
+
+.container_conteudo h1 span {
+    color: hsl(277, 64%, 61%);
+}
+.container_conteudo p {
+    font-size: 15px;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+.items {
+    margin-top: 60px;
+    display: flex;
+    gap: 80px;
+}
+.item {
+    position:relative;
+}
+.item span {
+    position: absolute;
+    top: 45px;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+.container_img  {
+    border-radius: 10px 10px 0 0;
+    width: 33.5rem;
+    height: 27.7rem;
+    background: rgba(192, 96, 230, 0.987);
+    background-size: cover;
+    background-blend-mode: darken;
+    opacity: .8;
+}
+img {
+    border-radius: 0 10px 10px;
+    display: block;
+    mix-blend-mode: multiply;
+    opacity: 0.8;
+    width: 100%;
+    height: 100%;
+}
+.mob {
+    display: none;
+}
+
+
+
+@media (max-width: 1000px) {
+    .container {
+        flex-direction: column-reverse;
+        justify-content: center;
+        width: 69%;
+    }
+
+    .container section {
+        width: 100%;
+    }
+ 
+    .container_mobal {
+        margin: 0 60px;
+    }
+    .items {
+        position: static;
+        flex-direction: column;
+        gap: 1px;
+        text-align: center;
+    }
+    .item {
+        position: static;
+    }
+    .item span {
+        position: static;
+        text-align: left;
+    }
+    .mob {
+        display: block;
+    }
+    .desk {
+        display: none;
+    }
+}
+
+@media (max-width: 680px) {
+    .container {
+        width: 79%;
+
+    }
+  
+}
+
+@media (max-width: 547px) {
+    .container {
+        width: 89%;
+    }
+}
+@media (max-width: 417px) {
+    .container {
+        width: 94%;
+    }
+}
